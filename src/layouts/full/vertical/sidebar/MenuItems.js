@@ -922,7 +922,7 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Social Media',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/sociallogin',
         },
         {
           id: uniqueId(),

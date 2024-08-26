@@ -120,7 +120,7 @@ const Privacy = Loadable(lazy(() => import('../views/apps/Texteditor/Privacy')))
 const Aboutus =Loadable(lazy(() => import('../views/apps/Texteditor/Aboutus')));
 const Refundpolicy =Loadable(lazy(() => import('../views/apps/Texteditor/Refundpolicy')));
 const Termsandcondition =Loadable(lazy(() => import('../views/apps/Texteditor/Termsandcondition')));
-
+const Sociallogin  = Loadable(lazy(() => import('../views/apps/Sociallogin/Social')));
 
 
 const Router = [
@@ -142,6 +142,8 @@ const Router = [
       {path:'/apps/aboutus',element:<Aboutus/>},
       {path:'/apps/refundpolicy',element:<Refundpolicy/>},
       {path:'/apps/termsandcondition',element:<Termsandcondition/>},
+      {path:'/apps/sociallogin',element:<Sociallogin/>},
+
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
   //     { path: '/apps/blog/detail/:id', element: <BlogDetail /> },
