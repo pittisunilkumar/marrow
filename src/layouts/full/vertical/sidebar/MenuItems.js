@@ -807,7 +807,7 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Social Login',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/sociallogin',
         },
         {
           id: uniqueId(),
@@ -920,9 +920,9 @@ const Menuitems = [
       children: [
         {
           id: uniqueId(),
-          title: 'Social Media',
+          title: 'Social Media Link',
           icon: IconPoint,
-          href: '/apps/sociallogin',
+          href: '/apps/sociallink',
         },
         {
           id: uniqueId(),

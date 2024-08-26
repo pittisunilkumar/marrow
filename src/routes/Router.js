@@ -123,6 +123,11 @@ const Termsandcondition =Loadable(lazy(() => import('../views/apps/Texteditor/Te
 const Sociallogin  = Loadable(lazy(() => import('../views/apps/Sociallogin/Social')));
 
 
+
+
+const Sociallink = Loadable(lazy(() => import('../views/apps/Sociallogin/Socaillink')));
+
+
 const Router = [
   {
     path: '/',
@@ -143,6 +148,7 @@ const Router = [
       {path:'/apps/refundpolicy',element:<Refundpolicy/>},
       {path:'/apps/termsandcondition',element:<Termsandcondition/>},
       {path:'/apps/sociallogin',element:<Sociallogin/>},
+      {path:'/apps/sociallink',element:<Sociallink/>},
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
