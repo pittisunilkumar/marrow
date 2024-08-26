@@ -928,25 +928,25 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Terms and Condition',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/termsandcondition',
         },
         {
           id: uniqueId(),
           title: 'Privacy Policy',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/privacy',
         },
         {
           id: uniqueId(),
           title: 'About Us',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/aboutus',
         },
         {
           id: uniqueId(),
           title: 'Refund Policy',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/refundpolicy',
         },
       ],
 
@@ -964,11 +964,19 @@ const Menuitems = [
     },
     {
       id: uniqueId(),
-      title: 'Contact Message',
-      icon: IconAperture,
-      href: '#',
+      title: 'Contacts',
+      icon: IconPackage,
+      // chip: '2',
       chipColor: 'secondary',
+      href: '/apps/contacts',
     },
+    // {
+    //   id: uniqueId(),
+    //   title: 'Contacts',
+    //   icon: IconAperture,
+    //   href: 'apps/contacts',
+    //   chipColor: 'secondary',
+    // },
 
 ];
 

@@ -114,6 +114,15 @@ const Maintenance = Loadable(lazy(() => import('../views/authentication/Maintena
 // landingpage
 const Landingpage = Loadable(lazy(() => import('../views/pages/landingpage/Landingpage')));
 
+
+// privacy pages
+const Privacy = Loadable(lazy(() => import('../views/apps/Texteditor/Privacy')));
+const Aboutus =Loadable(lazy(() => import('../views/apps/Texteditor/Aboutus')));
+const Refundpolicy =Loadable(lazy(() => import('../views/apps/Texteditor/Refundpolicy')));
+const Termsandcondition =Loadable(lazy(() => import('../views/apps/Texteditor/Termsandcondition')));
+
+
+
 const Router = [
   {
     path: '/',
@@ -125,9 +134,14 @@ const Router = [
       { path: '/apps/chats', element: <Chats /> },
   //     { path: '/apps/notes', element: <Notes /> },
       { path: '/apps/calendar', element: <Calendar /> },
-  //     { path: '/apps/email', element: <Email /> },
+      // { path: '/apps/email', element: <Email /> },
   //     { path: '/apps/tickets', element: <Tickets /> },
       { path: '/apps/contacts', element: <Contacts /> },
+
+      {path:'/apps/privacy',element:<Privacy/>},
+      {path:'/apps/aboutus',element:<Aboutus/>},
+      {path:'/apps/refundpolicy',element:<Refundpolicy/>},
+      {path:'/apps/termsandcondition',element:<Termsandcondition/>},
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
   //     { path: '/apps/blog/detail/:id', element: <BlogDetail /> },
