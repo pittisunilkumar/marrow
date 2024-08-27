@@ -1,9 +1,15 @@
 import React from 'react'
 
+import PageContainer from '../../../components/container/PageContainer';
+import Breadcrumb from '../../../layouts/full/shared/breadcrumb/Breadcrumb';
+
 export default function Recaptcha() {
   return (
-    <div>
-      <h1>Hello Recaptcha</h1>
-    </div>
+    <PageContainer title="Email Setting" description="This is Email Setting page">
+      {/* breadcrumb */}
+      <Breadcrumb title="Email Setting" subtitle=""/>
+    </PageContainer>
   )
 }
+
+
