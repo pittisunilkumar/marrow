@@ -227,9 +227,9 @@ const Router = [
     children: [
       // { path: '/', element: <Login2 /> },
       { path: '/auth/404', element: <Error /> },
-      { path: '/auth/login', element: <Login2 /> },
-      // { path: '/auth/login2', element: <Login2 /> },
-      // { path: '/auth/register', element: <Register /> },
+      { path: '/admin/login', element: <Login2 /> },
+      { path: '/user/login', element: <Login /> },
+      { path: '/user/register', element: <Register /> },
       // { path: '/auth/register2', element: <Register2 /> },
       // { path: '/auth/forgot-password', element: <ForgotPassword /> },
       // { path: '/auth/forgot-password2', element: <ForgotPassword2 /> },
