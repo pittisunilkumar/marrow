@@ -775,12 +775,6 @@ const Menuitems = [
         },
         {
           id: uniqueId(),
-          title: 'Session Setting',
-          icon: IconPoint,
-          href: '#',
-        },
-        {
-          id: uniqueId(),
           title: 'Email Setting',
           icon: IconPoint,
           href: '/apps/emailsetting',
