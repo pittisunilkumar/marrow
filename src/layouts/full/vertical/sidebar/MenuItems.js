@@ -789,7 +789,7 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Payment Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/paymentsetting',
         },
         {
           id: uniqueId(),

@@ -130,6 +130,7 @@ const Recaptcha =Loadable(lazy(() => import('../views/apps/recaptcha/Recaptcha')
 const Emailsetting =Loadable(lazy(() => import('../views/apps/emailsetting/Emailsetting')));
 const SmsSetting =Loadable(lazy(() => import('../views/apps/smssetting/SmsSetting')));
 const Firebase = Loadable(lazy(() => import('../views/apps/firebasesetting/Firebase')));
+const Payment = Loadable(lazy(() => import('../views/apps/paymentsetting/Payment')));
 
 const Router = [
   {
@@ -156,6 +157,7 @@ const Router = [
       {path:'/apps/smssetting',element:<SmsSetting/>},
       {path:'/apps/emailsetting',element:<Emailsetting/>},
       {path:'/apps/firebasesetting',element:<Firebase/>},
+      {path:'/apps/paymentsetting',element:<Payment/>},
   
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
@@ -242,3 +244,5 @@ const Router = [
 ];
 
 export default Router;
+
+
