@@ -1,0 +1,26 @@
+.wrapperClassName {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #ffffff;
+  }
+  
+  /* Styling for the toolbar */
+  .toolbarClassName {
+    background-color: #fafafa;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+  }
+  
+  /* Styling for the editor content area */
+  .editorClassName {
+    min-height: 200px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+  }
+  
+  

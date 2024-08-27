@@ -783,13 +783,13 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Email Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/emailsetting',
         },
         {
           id: uniqueId(),
           title: 'Sms Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/smssetting',
         },
         {
           id: uniqueId(),
@@ -801,19 +801,19 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Firebase Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/firebasesetting',
         },
         {
           id: uniqueId(),
           title: 'Social Login',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/sociallogin',
         },
         {
           id: uniqueId(),
           title: 'Recaptcha',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/recaptcha',
         },
         {
           id: uniqueId(),
@@ -920,33 +920,33 @@ const Menuitems = [
       children: [
         {
           id: uniqueId(),
-          title: 'Social Media',
+          title: 'Social Media Link',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/sociallink',
         },
         {
           id: uniqueId(),
           title: 'Terms and Condition',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/termsandcondition',
         },
         {
           id: uniqueId(),
           title: 'Privacy Policy',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/privacy',
         },
         {
           id: uniqueId(),
           title: 'About Us',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/aboutus',
         },
         {
           id: uniqueId(),
           title: 'Refund Policy',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/refundpolicy',
         },
       ],
 
@@ -964,11 +964,19 @@ const Menuitems = [
     },
     {
       id: uniqueId(),
-      title: 'Contact Message',
-      icon: IconAperture,
-      href: '#',
+      title: 'Contacts',
+      icon: IconPackage,
+      // chip: '2',
       chipColor: 'secondary',
+      href: '/apps/contacts',
     },
+    // {
+    //   id: uniqueId(),
+    //   title: 'Contacts',
+    //   icon: IconAperture,
+    //   href: 'apps/contacts',
+    //   chipColor: 'secondary',
+    // },
 
 ];
 
