@@ -801,7 +801,7 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Firebase Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/firebasesetting',
         },
         {
           id: uniqueId(),

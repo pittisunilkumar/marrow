@@ -129,7 +129,7 @@ const Sociallink = Loadable(lazy(() => import('../views/apps/sociallogin/Socaill
 const Recaptcha =Loadable(lazy(() => import('../views/apps/recaptcha/Recaptcha')));
 const Emailsetting =Loadable(lazy(() => import('../views/apps/emailsetting/Emailsetting')));
 const SmsSetting =Loadable(lazy(() => import('../views/apps/smssetting/SmsSetting')));
-
+const Firebase = Loadable(lazy(() => import('../views/apps/firebasesetting/Firebase')));
 
 const Router = [
   {
@@ -152,15 +152,11 @@ const Router = [
       {path:'/apps/termsandcondition',element:<Termsandcondition/>},
       {path:'/apps/sociallogin',element:<Sociallogin/>},
       {path:'/apps/sociallink',element:<Sociallink/>},
-
       {path:'/apps/recaptcha',element:<Recaptcha/>},
       {path:'/apps/smssetting',element:<SmsSetting/>},
       {path:'/apps/emailsetting',element:<Emailsetting/>},
-
-    
+      {path:'/apps/firebasesetting',element:<Firebase/>},
   
-
-
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
   //     { path: '/apps/blog/detail/:id', element: <BlogDetail /> },
