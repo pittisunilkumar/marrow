@@ -4,19 +4,14 @@ import { Grid, Typography } from '@mui/material';
 import PageContainer from '../../../components/container/PageContainer';
 import Breadcrumb from '../../../layouts/full/shared/breadcrumb/Breadcrumb';
 import FbBasicHeaderForm from './FbBasicHeaderForm';
+import FormTabs from './FormTabs';
 
 export default function Emailsetting() {
   return (
-    <PageContainer title="Email Setting" description="this is Email Setting page">
-    <Breadcrumb title="Email Setting" subtitle=""/>
+    <PageContainer title="Email Config" description="this is Email Config page">
+    <Breadcrumb title="Email Config" subtitle=""/>
 
-    <Grid container spacing={3}>
-      
-      <Grid item lg={12} md={12} xs={12}>
-        <FbBasicHeaderForm />
-      </Grid>
-      
-    </Grid>
+    <FormTabs/>
 
     </PageContainer>
   )
