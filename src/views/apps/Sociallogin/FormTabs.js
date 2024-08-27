@@ -97,6 +97,8 @@ const FormTabs = () => {
           </Box>
           <TabPanel value="1">
             <Grid container spacing={3}>
+
+
               <Grid item xs={12} lg={6}>
                 <Grid container>
                   <Grid item xs={12}>
@@ -133,6 +135,9 @@ const FormTabs = () => {
                   </Grid>
                 </Grid>
               </Grid>
+
+
+
               <Grid item xs={12} lg={6}>
                 <Grid container>
                   <Grid item xs={12}>
@@ -161,6 +166,24 @@ const FormTabs = () => {
                   </Grid>
                 </Grid>
               </Grid>
+
+
+
+              <Grid item xs={12} lg={6}>
+                <Grid container>
+                  <Grid item xs={12}>
+                    <CustomFormLabel htmlFor="ft-fb" sx={{ mt: { sm: 0 } }}>
+                      YouTube
+                    </CustomFormLabel>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <CustomTextField id="ft-fb" placeholder="https://youtube.com/abc" fullWidth />
+                  </Grid>
+                  
+                </Grid>
+              </Grid>
+
+
               <Grid item xs={12}>
                 <Stack direction="row" spacing={2}>
                   <Button variant="contained" color="primary">
@@ -171,7 +194,13 @@ const FormTabs = () => {
                   </Button>
                 </Stack>
               </Grid>
+
+
             </Grid>
+
+
+
+
           </TabPanel>
 
 

@@ -783,13 +783,13 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Email Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/emailsetting',
         },
         {
           id: uniqueId(),
           title: 'Sms Setting',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/smssetting',
         },
         {
           id: uniqueId(),
@@ -813,7 +813,7 @@ const Menuitems = [
           id: uniqueId(),
           title: 'Recaptcha',
           icon: IconPoint,
-          href: '#',
+          href: '/apps/recaptcha',
         },
         {
           id: uniqueId(),
