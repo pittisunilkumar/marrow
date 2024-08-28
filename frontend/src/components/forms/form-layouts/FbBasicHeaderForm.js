@@ -201,6 +201,8 @@ const FbBasicHeaderForm = () => {
             </CustomFormLabel>
             <CustomTextField id="post-text" variant="outlined" fullWidth />
           </Grid>
+
+          
           <Grid item lg={6} md={12} sm={12} xs={12}>
             <CustomFormLabel
               sx={{
