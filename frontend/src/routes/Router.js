@@ -132,6 +132,10 @@ const Firebase = Loadable(lazy(() => import('../views/apps/firebasesetting/Fireb
 const Payment = Loadable(lazy(() => import('../views/apps/paymentsetting/Payment')));
 const Generalsetting = Loadable(lazy(() => import('../views/apps/generalsetting/General')));
 
+const Backup = Loadable(lazy(() => import('../views/apps/backup/Backup')));
+const Employeerole = Loadable(lazy(() => import('../views/apps/employeerole/Employee')));
+
+
 const Router = [
   {
     path: '/',
@@ -158,8 +162,9 @@ const Router = [
       {path:'/apps/firebasesetting',element:<Firebase/>},
       {path:'/apps/paymentsetting',element:<Payment/>},
       {path:'/apps/generalsetting',element:<Generalsetting/>},
-
+      {path:'/apps/backup',element:<Backup/>},
       
+      {path:'/apps/employeerole',element:<Employeerole/>},
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },

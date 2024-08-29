@@ -722,299 +722,418 @@ import { uniqueId } from 'lodash';
 //   },
 // ];
 
+
+
+
+
 const Menuitems = [
-    {
-      navlabel: true,
-      subheader: 'User Management',
-    },
-    {
-      id: uniqueId(),
-      title: 'Users',
-      icon: IconUserPlus,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'List',
-          icon: IconPoint,
-          href: '',
-        },
-        {
-          id: uniqueId(),
-          title: 'Add New',
-          icon: IconPoint,
-          href: '',
-        },
-      ],
-    },
-    {
-      id: uniqueId(),
-      title: 'Instructors',
-      icon: IconUserPlus,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'List',
-          icon: IconPoint,
-          href: '',
-        },
-        {
-          id: uniqueId(),
-          title: 'Add New',
-          icon: IconPoint,
-          href: '',
-        },
-      ],
-    },
-    {
-      navlabel: true,
-      subheader: 'Employee Management',
-    },
-    {
-      id: uniqueId(),
-      title: 'Employee Role',
-      icon: IconAperture,
-      href: '#',
-      // chip: 'New',
-      chipColor: 'secondary',
-    },
-    {
-      id: uniqueId(),
-      title: 'Employee',
-      icon: IconUserPlus,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'List',
-          icon: IconPoint,
-          href: '',
-        },
-        {
-          id: uniqueId(),
-          title: 'Add New',
-          icon: IconPoint,
-          href: '',
-        },
-      ],
-    },
 
-    {
-      navlabel: true,
-      subheader: 'Setting',
-    },
+  // user management
 
-    {
-      id: uniqueId(),
-      title: 'System Setting',
-      icon: IconLogin,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'General Setting',
-          icon: IconPoint,
-          href: '/apps/generalsetting',
-        },
-        {
-          id: uniqueId(),
-          title: 'Email Setting',
-          icon: IconPoint,
-          href: '/apps/emailsetting',
-        },
-        {
-          id: uniqueId(),
-          title: 'Sms Setting',
-          icon: IconPoint,
-          href: '/apps/smssetting',
-        },
-        {
-          id: uniqueId(),
-          title: 'Payment Setting',
-          icon: IconPoint,
-          href: '/apps/paymentsetting',
-        },
-        {
-          id: uniqueId(),
-          title: 'Firebase Setting',
-          icon: IconPoint,
-          href: '/apps/firebasesetting',
-        },
-        {
-          id: uniqueId(),
-          title: 'Social Login',
-          icon: IconPoint,
-          href: '/apps/sociallogin',
-        },
-        {
-          id: uniqueId(),
-          title: 'Recaptcha',
-          icon: IconPoint,
-          href: '/apps/recaptcha',
-        },
-        {
-          id: uniqueId(),
-          title: 'Print Header and Footer',
-          icon: IconPoint,
-          href: '#',
-        },
-        {
-          id: uniqueId(),
-          title: 'Currency',
-          icon: IconPoint,
-          href: '#',
-        },
-        {
-          id: uniqueId(),
-          title: 'User Profile Setting',
-          icon: IconPoint,
-          href: '#',
-        },
-        {
-          id: uniqueId(),
-          title: 'Custom fields',
-          icon: IconPoint,
-          href: '#',
-        },
-        
-      ],
-    },
+  {
+    navlabel: true,
+    subheader: 'User Management',
+  },
+  {
+    id: uniqueId(),
+    title: 'Users',
+    icon: IconUserPlus,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'List',
+        icon: IconPoint,
+        href: '',
+      },
+      {
+        id: uniqueId(),
+        title: 'Add New',
+        icon: IconPoint,
+        href: '',
+      },
+    ],
+  },
 
-    {
-      id: uniqueId(),
-      title: 'Appearance',
-      icon: IconUserPlus,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'Color Change',
-          icon: IconPoint,
-          href: '',
-        },
-      ],
-    },
+  {
+    id: uniqueId(),
+    title: 'Instructors',
+    icon: IconUserPlus,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'List',
+        icon: IconPoint,
+        href: '',
+      },
+      {
+        id: uniqueId(),
+        title: 'Add New',
+        icon: IconPoint,
+        href: '',
+      },
+    ],
+  },
 
-    {
-      id: uniqueId(),
-      title: 'Utility',
-      icon: IconRotate,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'Maintenance',
-          icon: IconPoint,
-          href: '#',
-        },
-        {
-          id: uniqueId(),
-          title: 'App & Web setting',
-          icon: IconPoint,
-          href: '#',
-        },
-        
-      ],
-    },
+  // Education
+  
+  {
+    navlabel: true,
+    subheader: 'Education',
+  },
+  {
+    id: uniqueId(),
+    title: 'Quiz',
+    icon: IconUserPlus,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Question Group',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Add Question',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Question Bank',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Question import',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Add Quiz',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Quiz Setup',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Quiz Report',
+        icon: IconPoint,
+        href: '#',
+      },
 
-    {
-      id: uniqueId(),
-      title: 'Back Up',
-      icon: IconAperture,
-      href: '#',
-      // chip: 'New',
-      chipColor: 'secondary',
-    },
+    ],
+  },
+  {
+    id: uniqueId(),
+    title: 'Courses',
+    icon: IconUserPlus,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Category List',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'All courses',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Course Level',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Course Setting',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Course Assignment',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'School Subject',
+        icon: IconPoint,
+        href: '#',
+      },
 
-    {
-      id: uniqueId(),
-      title: 'Sidebar Manager',
-      icon: IconAperture,
-      href: '#',
-      // chip: 'New',
-      chipColor: 'secondary',
-    },
-    {
-      id: uniqueId(),
-      title: 'Clean Database',
-      icon: IconAperture,
-      href: '#',
-      // chip: 'New',
-      chipColor: 'secondary',
-    },
+    ],
+  },
+
+// employee management
+
+  {
+    navlabel: true,
+    subheader: 'Employee Management',
+  },
+  {
+    id: uniqueId(),
+    title: 'Employee Role',
+    icon: IconAperture,
+    href: '/apps/employeerole',
+    // chip: 'New',
+    chipColor: 'secondary',
+  },
+  {
+    id: uniqueId(),
+    title: 'Employee',
+    icon: IconUserPlus,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'List',
+        icon: IconPoint,
+        href: '',
+      },
+      {
+        id: uniqueId(),
+        title: 'Add New',
+        icon: IconPoint,
+        href: '',
+      },
+    ],
+  },
 
 
-    {
-      navlabel: true,
-      subheader: 'Policy Setting',
-    },
+  // setting
 
-    {
-      id: uniqueId(),
-      title: 'Pages & Social Media',
-      icon: IconRotate,
-      href: '#',
-      children: [
-        {
-          id: uniqueId(),
-          title: 'Social Media Link',
-          icon: IconPoint,
-          href: '/apps/sociallink',
-        },
-        {
-          id: uniqueId(),
-          title: 'Terms and Condition',
-          icon: IconPoint,
-          href: '/apps/termsandcondition',
-        },
-        {
-          id: uniqueId(),
-          title: 'Privacy Policy',
-          icon: IconPoint,
-          href: '/apps/privacy',
-        },
-        {
-          id: uniqueId(),
-          title: 'About Us',
-          icon: IconPoint,
-          href: '/apps/aboutus',
-        },
-        {
-          id: uniqueId(),
-          title: 'Refund Policy',
-          icon: IconPoint,
-          href: '/apps/refundpolicy',
-        },
-      ],
+  {
+    navlabel: true,
+    subheader: 'Setting',
+  },
 
-    },
+  {
+    id: uniqueId(),
+    title: 'System Setting',
+    icon: IconLogin,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'General Setting',
+        icon: IconPoint,
+        href: '/apps/generalsetting',
+      },
+      {
+        id: uniqueId(),
+        title: 'Email Setting',
+        icon: IconPoint,
+        href: '/apps/emailsetting',
+      },
+      {
+        id: uniqueId(),
+        title: 'Sms Setting',
+        icon: IconPoint,
+        href: '/apps/smssetting',
+      },
+      {
+        id: uniqueId(),
+        title: 'Payment Setting',
+        icon: IconPoint,
+        href: '/apps/paymentsetting',
+      },
+      {
+        id: uniqueId(),
+        title: 'Firebase Setting',
+        icon: IconPoint,
+        href: '/apps/firebasesetting',
+      },
+      {
+        id: uniqueId(),
+        title: 'Social Login',
+        icon: IconPoint,
+        href: '/apps/sociallogin',
+      },
+      {
+        id: uniqueId(),
+        title: 'Recaptcha',
+        icon: IconPoint,
+        href: '/apps/recaptcha',
+      },
+      {
+        id: uniqueId(),
+        title: 'Print Header and Footer',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Currency',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'User Profile Setting',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'Custom fields',
+        icon: IconPoint,
+        href: '#',
+      },
+      
+    ],
+  },
 
-    {
-      navlabel: true,
-      subheader: 'Help & Support',
-    },
-    {
-      id: uniqueId(),
-      title: 'Chats',
-      icon: IconMessage2,
-      href: '/apps/chats',
-    },
-    {
-      id: uniqueId(),
-      title: 'Contacts',
-      icon: IconPackage,
-      // chip: '2',
-      chipColor: 'secondary',
-      href: '/apps/contacts',
-    },
-    // {
-    //   id: uniqueId(),
-    //   title: 'Contacts',
-    //   icon: IconAperture,
-    //   href: 'apps/contacts',
-    //   chipColor: 'secondary',
-    // },
+  {
+    id: uniqueId(),
+    title: 'Appearance',
+    icon: IconUserPlus,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Color Change',
+        icon: IconPoint,
+        href: '',
+      },
+    ],
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Utility',
+    icon: IconRotate,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Maintenance',
+        icon: IconPoint,
+        href: '#',
+      },
+      {
+        id: uniqueId(),
+        title: 'App & Web setting',
+        icon: IconPoint,
+        href: '#',
+      },
+      
+    ],
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Back Up',
+    icon: IconAperture,
+    href: '/apps/backup',
+    // chip: 'New',
+    chipColor: 'secondary',
+  },
+
+  {
+    id: uniqueId(),
+    title: 'Sidebar Manager',
+    icon: IconAperture,
+    href: '#',
+    // chip: 'New',
+    chipColor: 'secondary',
+  },
+  {
+    id: uniqueId(),
+    title: 'Clean Database',
+    icon: IconAperture,
+    href: '#',
+    // chip: 'New',
+    chipColor: 'secondary',
+  },
+
+
+  // Policy Setting
+
+
+  {
+    navlabel: true,
+    subheader: 'Policy Setting',
+  },
+
+
+  {
+    id: uniqueId(),
+    title: 'Pages & Social Media',
+    icon: IconRotate,
+    href: '#',
+    children: [
+      {
+        id: uniqueId(),
+        title: 'Social Media Link',
+        icon: IconPoint,
+        href: '/apps/sociallink',
+      },
+      {
+        id: uniqueId(),
+        title: 'Terms and Condition',
+        icon: IconPoint,
+        href: '/apps/termsandcondition',
+      },
+      {
+        id: uniqueId(),
+        title: 'Privacy Policy',
+        icon: IconPoint,
+        href: '/apps/privacy',
+      },
+      {
+        id: uniqueId(),
+        title: 'About Us',
+        icon: IconPoint,
+        href: '/apps/aboutus',
+      },
+      {
+        id: uniqueId(),
+        title: 'Refund Policy',
+        icon: IconPoint,
+        href: '/apps/refundpolicy',
+      },
+    ],
+
+  },
+
+
+  // Help & Support
+
+
+  {
+    navlabel: true,
+    subheader: 'Help & Support',
+  },
+  {
+    id: uniqueId(),
+    title: 'Chats',
+    icon: IconMessage2,
+    href: '/apps/chats',
+  },
+  {
+    id: uniqueId(),
+    title: 'Contacts',
+    icon: IconPackage,
+    // chip: '2',
+    chipColor: 'secondary',
+    href: '/apps/contacts',
+  },
+  
 
 ];
 
