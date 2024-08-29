@@ -148,6 +148,10 @@ const CleanDb = Loadable(lazy(() => import('../views/apps/cleandatabase/CleanDat
 // App & Web Settings
 const Appandweb =  Loadable(lazy(() => import('../views/apps/appandwebsettings/Appandwebsetting')));
 
+const EmployeeList =  Loadable(lazy(() => import('../views/apps/employee/EmployeeList')));
+const Employeeadd =  Loadable(lazy(() => import('../views/apps/employee/AddEmployee')));
+
+
 const Router = [
   {
     path: '/',
@@ -182,6 +186,10 @@ const Router = [
 
       {path:'/apps/appandwebsetting',element:<Appandweb/>},
 
+
+      {path:'/apps/employee',element:<EmployeeList/>},
+      {path:'/apps/addemployee',element:<Employeeadd/>},
+
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
   //     { path: '/apps/blog/detail/:id', element: <BlogDetail /> },
@@ -203,7 +211,6 @@ const Router = [
   //     { path: '/forms/form-elements/radio', element: <MuiRadio /> },
   //     { path: '/forms/form-elements/slider', element: <MuiSlider /> },
   //     { path: '/forms/form-elements/date-time', element: <MuiDateTime /> },
-  //     { path: '/forms/form-elements/switch', element: <MuiSwitch /> },
   //     { path: '/forms/form-elements/switch', element: <MuiSwitch /> },
   //     { path: '/forms/quill-editor', element: <QuillEditor /> },
   //     { path: '/forms/form-layouts', element: <FormLayouts /> },
