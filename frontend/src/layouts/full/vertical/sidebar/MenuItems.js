@@ -1029,7 +1029,7 @@ const Menuitems = [
         id: uniqueId(),
         title: 'App & Web setting',
         icon: IconPoint,
-        href: '#',
+        href: '/apps/appandwebsetting',
       },
       
     ],

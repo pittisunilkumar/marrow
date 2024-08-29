@@ -145,6 +145,8 @@ const Employeerole = Loadable(lazy(() => import('../views/apps/employeerole/Empl
 // Clean Database
 const CleanDb = Loadable(lazy(() => import('../views/apps/cleandatabase/CleanDatabase')));
 
+// App & Web Settings
+const Appandweb =  Loadable(lazy(() => import('../views/apps/appandwebsettings/Appandwebsetting')));
 
 const Router = [
   {
@@ -176,7 +178,9 @@ const Router = [
       
       {path:'/apps/employeerole',element:<Employeerole/>},
 
-      {path:'/apps/cleandb',element:<CleanDb/>}
+      {path:'/apps/cleandb',element:<CleanDb/>},
+
+      {path:'/apps/appandwebsetting',element:<Appandweb/>},
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
