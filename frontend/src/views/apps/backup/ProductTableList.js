@@ -30,6 +30,7 @@ import { fetchProducts } from 'src/store/apps/eCommerce/EcommerceSlice';
 import CustomCheckbox from '../../../components/forms/theme-elements/CustomCheckbox';
 import CustomSwitch from '../../../components/forms/theme-elements/CustomSwitch';
 import { IconDotsVertical, IconFilter, IconSearch, IconTrash } from '@tabler/icons';
+import Language from './Language';
 
 function descendingComparator(a, b, orderBy) {
   if (b[orderBy] < a[orderBy]) {
@@ -62,7 +63,7 @@ const headCells = [
     id: 'name',
     numeric: false,
     disablePadding: false,
-    label: 'Products',
+    label: 'Backup Files',
   },
   {
     id: 'pname',
@@ -70,18 +71,7 @@ const headCells = [
     disablePadding: false,
     label: 'Date',
   },
-  {
-    id: 'status',
-    numeric: false,
-    disablePadding: false,
-    label: 'Status',
-  },
-  {
-    id: 'price',
-    numeric: false,
-    disablePadding: false,
-    label: 'Price',
-  },
+
   {
     id: 'action',
     numeric: false,
@@ -312,22 +302,11 @@ const ProductTableList = () => {
                     return (
                       <TableRow
                         hover
-                        // onClick={(event) => handleClick(event, row.title)}
-                        // role="checkbox"
-                        // aria-checked={isItemSelected}
                         tabIndex={-1}
                         key={row.title}
-                        // selected={isItemSelected}
+                      
                       >
-                        {/* <TableCell padding="checkbox">
-                          <CustomCheckbox
-                            color="primary"
-                            checked={isItemSelected}
-                            inputprops={{
-                              'aria-labelledby': labelId,
-                            }}
-                          />
-                        </TableCell> */}
+                        
 
                         <TableCell>
                           <Box display="flex" alignItems="center">
@@ -354,42 +333,16 @@ const ProductTableList = () => {
                         <TableCell>
                           <Typography>{format(new Date(row.created), 'E, MMM d yyyy')}</Typography>
                         </TableCell>
-
-                        <TableCell>
-                          <Box display="flex" alignItems="center">
-                            <Box
-                              sx={{
-                                backgroundColor: row.stock
-                                  ? (theme) => theme.palette.success.main
-                                  : (theme) => theme.palette.error.main,
-                                borderRadius: '100%',
-                                height: '10px',
-                                width: '10px',
-                              }}
-                            />
-                            <Typography
-                              color="textSecondary"
-                              variant="subtitle2"
-                              sx={{
-                                ml: 1,
-                              }}
-                            >
-                              {row.stock ? 'InStock' : 'Out of Stock'}
-                            </Typography>
-                          </Box>
-                        </TableCell>
-
-                        <TableCell>
-                          <Typography fontWeight="500" variant="h6">
-                            ${row.price}
-                          </Typography>
-                        </TableCell>
                         <TableCell>
 
                           <Tooltip>
-                            <IconButton size="small">
+                            
+                            {/* <IconButton size="small">
                               <IconDotsVertical size="1.1rem" />
-                            </IconButton>
+                            </IconButton> */}
+
+                            <Language/>
+
                           </Tooltip>
 
                         </TableCell>
