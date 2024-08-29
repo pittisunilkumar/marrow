@@ -1056,7 +1056,7 @@ const Menuitems = [
     id: uniqueId(),
     title: 'Clean Database',
     icon: IconAperture,
-    href: '#',
+    href: '/apps/cleandb',
     // chip: 'New',
     chipColor: 'secondary',
   },

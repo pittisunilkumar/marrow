@@ -120,11 +120,12 @@ const Privacy = Loadable(lazy(() => import('../views/apps/Texteditor/Privacy')))
 const Aboutus =Loadable(lazy(() => import('../views/apps/Texteditor/Aboutus')));
 const Refundpolicy =Loadable(lazy(() => import('../views/apps/Texteditor/Refundpolicy')));
 const Termsandcondition =Loadable(lazy(() => import('../views/apps/Texteditor/Termsandcondition')));
-const Sociallogin  = Loadable(lazy(() => import('../views/apps/sociallogin/Social')));
-
-
-
 const Sociallink = Loadable(lazy(() => import('../views/apps/sociallogin/Socaillink')));
+
+
+
+// System setting
+const Sociallogin  = Loadable(lazy(() => import('../views/apps/sociallogin/Social')));
 const Recaptcha =Loadable(lazy(() => import('../views/apps/recaptcha/Recaptcha')));
 const Emailsetting =Loadable(lazy(() => import('../views/apps/emailsetting/Emailsetting')));
 const SmsSetting =Loadable(lazy(() => import('../views/apps/smssetting/SmsSetting')));
@@ -132,8 +133,17 @@ const Firebase = Loadable(lazy(() => import('../views/apps/firebasesetting/Fireb
 const Payment = Loadable(lazy(() => import('../views/apps/paymentsetting/Payment')));
 const Generalsetting = Loadable(lazy(() => import('../views/apps/generalsetting/General')));
 
+
+// Backup 
 const Backup = Loadable(lazy(() => import('../views/apps/backup/Backup')));
+
+
+// Employee role
 const Employeerole = Loadable(lazy(() => import('../views/apps/employeerole/Employee')));
+
+
+// Clean Database
+const CleanDb = Loadable(lazy(() => import('../views/apps/cleandatabase/CleanDatabase')));
 
 
 const Router = [
@@ -165,6 +175,8 @@ const Router = [
       {path:'/apps/backup',element:<Backup/>},
       
       {path:'/apps/employeerole',element:<Employeerole/>},
+
+      {path:'/apps/cleandb',element:<CleanDb/>}
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
