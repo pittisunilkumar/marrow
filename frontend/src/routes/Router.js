@@ -124,7 +124,6 @@ const Sociallogin  = Loadable(lazy(() => import('../views/apps/sociallogin/Socia
 
 
 
-
 const Sociallink = Loadable(lazy(() => import('../views/apps/sociallogin/Socaillink')));
 const Recaptcha =Loadable(lazy(() => import('../views/apps/recaptcha/Recaptcha')));
 const Emailsetting =Loadable(lazy(() => import('../views/apps/emailsetting/Emailsetting')));
@@ -147,7 +146,6 @@ const Router = [
       // { path: '/apps/email', element: <Email /> },
   //     { path: '/apps/tickets', element: <Tickets /> },
       { path: '/apps/contacts', element: <Contacts /> },
-
       {path:'/apps/privacy',element:<Privacy/>},
       {path:'/apps/aboutus',element:<Aboutus/>},
       {path:'/apps/refundpolicy',element:<Refundpolicy/>},
