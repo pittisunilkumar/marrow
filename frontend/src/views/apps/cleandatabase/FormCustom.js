@@ -3,22 +3,13 @@ import PropTypes from 'prop-types';
 import {
   Grid,
   Box,
-  Typography,
-  FormControl,
-  MenuItem,
-  RadioGroup,
   FormControlLabel,
   Button,
 } from '@mui/material';
 import { SliderThumb } from '@mui/material/Slider';
 
-import Breadcrumb from '../../../layouts/full/shared/breadcrumb/Breadcrumb';
-import PageContainer from '../../../components/container/PageContainer';
 
-import { LocalizationProvider } from '@mui/x-date-pickers';
-import { AdapterDateFns } from '@mui/x-date-pickers/AdapterDateFns'
-import { DateTimePicker } from '@mui/x-date-pickers/DateTimePicker'
-import { TimePicker } from '@mui/x-date-pickers/TimePicker'
+import { IconShoppingCart, IconX } from '@tabler/icons';
 
 import CustomTextField from '../../../components/forms/theme-elements/CustomTextField';
 import CustomSelect from '../../../components/forms/theme-elements/CustomSelect';
@@ -31,13 +22,14 @@ import CustomFormLabel from '../../../components/forms/theme-elements/CustomForm
 import CustomCheckbox from '../../../components/forms/theme-elements/CustomCheckbox';
 import CustomRadio from '../../../components/forms/theme-elements/CustomRadio';
 import ParentCard from './ParentCard';
-import { IconVolume, IconVolume2 } from '@tabler/icons';
 import { Stack } from '@mui/system';
-
+import { useSelector } from 'react-redux';
+import { Typography, Badge, Drawer, IconButton} from '@mui/material';
 
 
 const CustomThumbComponent = (props) => {
   const { children, ...other } = props;
+  
   return (
     <SliderThumb {...other}>
       {children}
@@ -73,6 +65,9 @@ CustomThumbComponent.propTypes = {
 };
 
 const FormCustom = () => {
+  const Cartproduct = useSelector((state) => state.ecommerceReducer.cart);
+  const bcount = Cartproduct.length > 0 ? Cartproduct.length : '0';
+
   const [age, setAge] = React.useState('1');
   const [select1, setSelect] = React.useState('1');
   const [select2, setSelect2] = React.useState('1');
@@ -111,6 +106,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -118,6 +115,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -125,23 +124,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
 
               </Grid>
 
           </Grid>
-
-
           <Grid item xs={12} sm={12} lg={12}>
             
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -149,6 +150,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -156,22 +159,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -179,6 +185,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -186,22 +194,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -209,6 +220,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -216,21 +229,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -238,6 +255,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -245,21 +264,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -267,6 +290,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -274,21 +299,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -296,6 +325,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -303,21 +334,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -325,6 +360,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -332,21 +369,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -354,6 +395,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -361,21 +404,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -383,6 +430,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -390,21 +439,25 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
-
           <Grid item xs={12} sm={12} lg={12}>
-              
+            
               <Grid container>
-                
+
                 <Grid item xs={12} sm={4} lg={4}>
                   <FormControlLabel
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -412,6 +465,8 @@ const FormCustom = () => {
                     control={<CustomCheckbox />} 
                     label="Enter text" 
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
 
                 <Grid item xs={12} sm={4} lg={4}>
@@ -419,11 +474,191 @@ const FormCustom = () => {
                     control={<CustomCheckbox/>}
                     label="Enter text"
                   />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
                 </Grid>
+
 
               </Grid>
 
           </Grid>
+          <Grid item xs={12} sm={12} lg={12}>
+            
+              <Grid container>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel 
+                    control={<CustomCheckbox />} 
+                    label="Enter text" 
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+
+              </Grid>
+
+          </Grid>
+          <Grid item xs={12} sm={12} lg={12}>
+            
+              <Grid container>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel 
+                    control={<CustomCheckbox />} 
+                    label="Enter text" 
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+
+              </Grid>
+
+          </Grid>
+          <Grid item xs={12} sm={12} lg={12}>
+            
+              <Grid container>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel 
+                    control={<CustomCheckbox />} 
+                    label="Enter text" 
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+
+              </Grid>
+
+          </Grid>
+          <Grid item xs={12} sm={12} lg={12}>
+            
+              <Grid container>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel 
+                    control={<CustomCheckbox />} 
+                    label="Enter text" 
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+
+              </Grid>
+
+          </Grid>
+          <Grid item xs={12} sm={12} lg={12}>
+            
+              <Grid container>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel 
+                    control={<CustomCheckbox />} 
+                    label="Enter text" 
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+                <Grid item xs={12} sm={4} lg={4}>
+                  <FormControlLabel
+                    control={<CustomCheckbox/>}
+                    label="Enter text"
+                  />
+                  <Badge color="error" badgeContent={bcount}>
+                  </Badge>
+                </Grid>
+
+
+              </Grid>
+
+          </Grid>
+
+
 
 
 
