@@ -179,11 +179,8 @@ const Router = [
       {path:'/apps/paymentsetting',element:<Payment/>},
       {path:'/apps/generalsetting',element:<Generalsetting/>},
       {path:'/apps/backup',element:<Backup/>},
-      
       {path:'/apps/employeerole',element:<Employeerole/>},
-
       {path:'/apps/cleandb',element:<CleanDb/>},
-
       {path:'/apps/appandwebsetting',element:<Appandweb/>},
 
 
