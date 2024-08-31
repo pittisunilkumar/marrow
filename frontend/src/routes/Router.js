@@ -145,6 +145,30 @@ const Employeerole = Loadable(lazy(() => import('../views/apps/employeerole/Empl
 // Clean Database
 const CleanDb = Loadable(lazy(() => import('../views/apps/cleandatabase/CleanDatabase')));
 
+// App & Web Settings
+const Appandweb =  Loadable(lazy(() => import('../views/apps/appandwebsettings/Appandwebsetting')));
+
+const EmployeeList =  Loadable(lazy(() => import('../views/apps/employee/EmployeeList')));
+const Employeeadd =  Loadable(lazy(() => import('../views/apps/employee/AddEmployee')));
+
+//Quiz
+const Quizgroup = Loadable(lazy(()=>import('../views/apps/quiz/addquizgroup/Quizgroup')));
+const AddQuestion = Loadable(lazy(()=>import('../views/apps/quiz/addquestion/AddQuestion')));
+const Questionbank = Loadable(lazy(()=>import('../views/apps/quiz/questionbank/Questionbank')));
+const Questionimport = Loadable(lazy(()=>import('../views/apps/quiz/questionimport/Questionimport')));
+const Addquiz = Loadable(lazy(()=>import('../views/apps/quiz/addquiz/Addquiz')));
+const Quizsetup = Loadable(lazy(()=>import('../views/apps/quiz/quizsetup/Quizsetup')));
+const Quizreport = Loadable(lazy(()=>import('../views/apps/quiz/quizreport/Quizreport')));
+
+//courses
+
+const Categorylist = Loadable(lazy(()=>import('../views/apps/courses/categorylist/Categorylist')));
+const Allcourses = Loadable(lazy(()=>import('../views/apps/courses/allcourses/Allcourses')));
+const Courselevel = Loadable(lazy(()=>import('../views/apps/courses/courselevel/Courselevel')));
+const Coursesetting = Loadable(lazy(()=>import('../views/apps/courses/coursesetting/Coursesetting')));
+const Courseassignment = Loadable(lazy(()=>import('../views/apps/courses/courseassignment/Courseassignment')));
+
+
 
 const Router = [
   {
@@ -173,10 +197,32 @@ const Router = [
       {path:'/apps/paymentsetting',element:<Payment/>},
       {path:'/apps/generalsetting',element:<Generalsetting/>},
       {path:'/apps/backup',element:<Backup/>},
-      
       {path:'/apps/employeerole',element:<Employeerole/>},
+      {path:'/apps/cleandb',element:<CleanDb/>},
+      {path:'/apps/appandwebsetting',element:<Appandweb/>},
 
-      {path:'/apps/cleandb',element:<CleanDb/>}
+
+      {path:'/apps/employee',element:<EmployeeList/>},
+      {path:'/apps/addemployee',element:<Employeeadd/>},
+
+      // quiz
+      {path:'/apps/addquizgroup',element:<Quizgroup/>},
+      {path:'/apps/addquestion',element:<AddQuestion/>},
+      {path:'/apps/questionbank',element:<Questionbank/>},
+      {path:'/apps/questionimport',element:<Questionimport/>},
+      {path:'/apps/addquiz',element:<Addquiz/>},
+      {path:'/apps/quizsetup',element:<Quizsetup/>},
+      {path:'/apps/quizreport',element:<Quizreport/>},
+
+      //courses
+      {path:'/apps/allcourses',element:<Allcourses/>},
+      {path:'/apps/categorylist',element:<Categorylist/>},
+      {path:'/apps/courseassignment',element:<Courseassignment/>},
+      {path:'/apps/courselevel',element:<Courselevel/>},
+      {path:'/apps/coursesetting',element:<Coursesetting/>},
+
+      
+
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
@@ -199,7 +245,6 @@ const Router = [
   //     { path: '/forms/form-elements/radio', element: <MuiRadio /> },
   //     { path: '/forms/form-elements/slider', element: <MuiSlider /> },
   //     { path: '/forms/form-elements/date-time', element: <MuiDateTime /> },
-  //     { path: '/forms/form-elements/switch', element: <MuiSwitch /> },
   //     { path: '/forms/form-elements/switch', element: <MuiSwitch /> },
   //     { path: '/forms/quill-editor', element: <QuillEditor /> },
   //     { path: '/forms/form-layouts', element: <FormLayouts /> },
