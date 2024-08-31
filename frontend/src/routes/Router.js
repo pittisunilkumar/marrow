@@ -151,6 +151,17 @@ const Appandweb =  Loadable(lazy(() => import('../views/apps/appandwebsettings/A
 const EmployeeList =  Loadable(lazy(() => import('../views/apps/employee/EmployeeList')));
 const Employeeadd =  Loadable(lazy(() => import('../views/apps/employee/AddEmployee')));
 
+//Quiz
+const Quizgroup = Loadable(lazy(()=>import('../views/apps/quiz/addquizgroup/Quizgroup')));
+const AddQuestion = Loadable(lazy(()=>import('../views/apps/quiz/addquestion/AddQuestion')));
+const Questionbank = Loadable(lazy(()=>import('../views/apps/quiz/questionbank/Questionbank')));
+const Questionimport = Loadable(lazy(()=>import('../views/apps/quiz/questionimport/Questionimport')));
+const Addquiz = Loadable(lazy(()=>import('../views/apps/quiz/addquiz/Addquiz')));
+const Quizsetup = Loadable(lazy(()=>import('../views/apps/quiz/quizsetup/Quizsetup')));
+const Quizreport = Loadable(lazy(()=>import('../views/apps/quiz/quizreport/Quizreport')));
+
+
+
 
 const Router = [
   {
@@ -186,6 +197,16 @@ const Router = [
 
       {path:'/apps/employee',element:<EmployeeList/>},
       {path:'/apps/addemployee',element:<Employeeadd/>},
+
+      // quiz
+      {path:'/apps/addquizgroup',element:<Quizgroup/>},
+      {path:'/apps/addquestion',element:<AddQuestion/>},
+      {path:'/apps/questionbank',element:<Questionbank/>},
+      {path:'/apps/questionimport',element:<Questionimport/>},
+      {path:'/apps/addquiz',element:<Addquiz/>},
+      {path:'/apps/quizsetup',element:<Quizsetup/>},
+      {path:'/apps/quizreport',element:<Quizreport/>},
+      
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
   //     { path: '/apps/blog/posts', element: <Blog /> },
