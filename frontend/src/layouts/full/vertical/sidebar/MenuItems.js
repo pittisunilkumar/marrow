@@ -844,39 +844,33 @@ const Menuitems = [
         id: uniqueId(),
         title: 'Category List',
         icon: IconPoint,
-        href: '#',
+        href: '/apps/categorylist',
       },
       {
         id: uniqueId(),
         title: 'All courses',
         icon: IconPoint,
-        href: '#',
+        href: '/apps/allcourses',
       },
       {
         id: uniqueId(),
         title: 'Course Level',
         icon: IconPoint,
-        href: '#',
+        href: '/apps/courselevel',
       },
       {
         id: uniqueId(),
         title: 'Course Setting',
         icon: IconPoint,
-        href: '#',
+        href: '/apps/coursesetting',
       },
       {
         id: uniqueId(),
         title: 'Course Assignment',
         icon: IconPoint,
-        href: '#',
+        href: '/apps/courseassignment',
       },
-      {
-        id: uniqueId(),
-        title: 'School Subject',
-        icon: IconPoint,
-        href: '#',
-      },
-
+      
     ],
   },
 
