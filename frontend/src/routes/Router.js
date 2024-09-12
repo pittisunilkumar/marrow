@@ -160,7 +160,7 @@ const Addquiz = Loadable(lazy(()=>import('../views/apps/quiz/addquiz/Addquiz')))
 const Quizsetup = Loadable(lazy(()=>import('../views/apps/quiz/quizsetup/Quizsetup')));
 const Quizreport = Loadable(lazy(()=>import('../views/apps/quiz/quizreport/Quizreport')));
 
-//courses
+// Courses
 
 const Categorylist = Loadable(lazy(()=>import('../views/apps/courses/categorylist/Categorylist')));
 const Allcourses = Loadable(lazy(()=>import('../views/apps/courses/allcourses/Allcourses')));
@@ -168,6 +168,13 @@ const Courselevel = Loadable(lazy(()=>import('../views/apps/courses/courselevel/
 const Coursesetting = Loadable(lazy(()=>import('../views/apps/courses/coursesetting/Coursesetting')));
 const Courseassignment = Loadable(lazy(()=>import('../views/apps/courses/courseassignment/Courseassignment')));
 
+// Users
+const Addusers = Loadable(lazy(()=>import('../views/apps/users/addusers/Addusers')));
+const Listusers = Loadable(lazy(()=>import('../views/apps/users/listusers/Listusers')));
+
+// Instructors
+const Listinstructors = Loadable(lazy(()=>import('../views/apps/instructors/listuser/Listuser')));
+const Addinstructors = Loadable(lazy(()=>import('../views/apps/instructors/adduser/Adduser')));
 
 
 const Router = [
@@ -221,7 +228,15 @@ const Router = [
       {path:'/apps/courselevel',element:<Courselevel/>},
       {path:'/apps/coursesetting',element:<Coursesetting/>},
 
-      
+      //users
+      {path:'/apps/listusers',element:<Listusers/>},
+      {path:'/apps/addusers',element:<Addusers/>},
+
+      // instructors
+      {path:'/apps/listinstructors',element:<Listinstructors/>},
+      {path:'/apps/addinstructors',element:<Addinstructors/>},
+
+
 
 
   //     { path: '/apps/ecommerce/shop', element: <Ecommerce /> },
